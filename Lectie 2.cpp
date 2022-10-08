@@ -15,7 +15,7 @@ int main()
     cin>>a;
     cout<<"b= ";
     cin>>b;
-    cout<<a<<" la puterea "<<b<< "este egal cu "<<pow(a,b)<<endl;
+    cout<<a<<" la puterea "<<b<< " este egal cu "<<pow(a,b)<<endl;
     return 0;
     */
     
@@ -25,7 +25,6 @@ int main()
     //sqrt(a) inseamna radicalul lui "a"
     
     int a;
-
     cout<<"a= ";
     cin>>a;
     cout<<"radacina patrata a lui "<<a<<" este: "<<sqrt(a)<<endl;
@@ -40,7 +39,7 @@ int main()
     
     cout<<"a= ";
     cin>>a;
-    cout<<"radacina cubica a lui "<<a<<"este "<<cbrt(a)<<endl;
+    cout<<"radacina cubica a lui "<<a<<" este "<<cbrt(a)<<endl;
     */
     
     //Ex:4----------------------------------------------------------------------
@@ -145,4 +144,3 @@ int main()
     
    //Operatori Logici: //, &&, !
 }
-
