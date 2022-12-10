@@ -256,7 +256,16 @@ int main()
     }
     
     
-    
+    if(a==0)
+    {
+        if(b==0)
+        {
+            if(c==1)
+            {
+                cout << endl << endl << "Yeah we got a, #1 Victory Royale, yeah Fortnite we 'bout to get down!";
+            }
+        }
+    }
     
     
     
