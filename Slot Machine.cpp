@@ -24,7 +24,7 @@ int main()
     cout << "_  ";
     
     
-    cout<< endl;
+    cout << endl;
     
     
     cout << "   ";
@@ -64,71 +64,197 @@ int main()
     
     
     
-    for(a=0; b=0; c=0)
+    if(a==1)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==1)
+        {
+            if(c==1)
+            {
+                cout << endl << endl << "JACKPOT!";
+            }
+        }
     }
 
-    for(a=1; b=1; c=1)
+
+    if(a==2)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==2)
+        {
+            if(c==2)
+            {
+                cout << endl << endl << "JACKPOT!";
+            }
+        }
     }
 
-    for(a=2; b=2; c=2)
+    
+    if(a==3)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==3)
+        {
+            if(c==3)
+            {
+                cout << endl << endl << "JACKPOT!";
+            }
+        }
+    }
+
+    
+    if(a==4)
+    {
+        if(b==4)
+        {
+            if(c==4)
+            {
+                cout << endl << endl << "JACKPOT!";
+            }
+        }
+    }
+
+    
+    if(a==5)
+    {
+        if(b==5)
+        {
+            if(c==5)
+            {
+                cout << endl << endl << "JACKPOT!";
+            }
+        }
+    }
+
+    
+    if(a==6)
+    {
+        if(b==6)
+        {
+            if(c==6)
+            {
+                cout << endl << endl << "JACKPOT STRAIGHT FROM HELL!";
+            }
+        }
+    }
+
+    
+    if(a==7)
+    {
+        if(b==7)
+        {
+            if(c==7)
+            {
+                cout << endl << endl << "JACKPOT!";
+            }
+        }
     }
     
-    for(a=3; b=3; c=3)
+    
+    if(a==8)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==8)
+        {
+            if(c==8)
+            {
+                cout << endl << endl << "JACKPOT!";
+            }
+        }
     }
     
-    for(a=4; b=4; c=4)
+
+    if(a==9)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==9)
+        {
+            if(c==9)
+            {
+                cout << endl << endl << "Basically a thousand!";
+            }
+        }
     }
     
-    for(a=5; b=5; c=5)
+    
+    if(a==0)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==0)
+        {
+            if(c==7)
+            {
+                cout << endl << endl << "My name is Bond, James Bond.";
+            }
+        }
     }
     
-    for(a=5; b=5; c=5)
+    
+    if(a==4)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==2)
+        {
+            if(c==0)
+            {
+                cout << endl << endl << "funni number, also don't do drugs!";
+            }
+        }
     }
     
-    for(a=6; b=6; c=6)
+    
+    if(a==6)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==9)
+        {
+            if(c==0)
+            {
+                cout << endl << endl << "Seems like 12 Year Old Humor";
+            }
+        }
     }
     
-    for(a=7; b=7; c=7)
+    
+    if(a==0)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==6)
+        {
+            if(c==4)
+            {
+                cout << endl << endl << "Minecraft";
+            }
+        }
     }
     
-    for(a=8; b=8; c=8)
+    
+    if(a==0)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==2)
+        {
+            if(c==1)
+            {
+                cout << endl << endl << "What's 9 + 10?";
+            }
+        }
     }
     
-    for(a=9; b=9; c=9)
+    
+    if(a==4)
     {
-        cout << endl << endl <<"Jackpot!";
-        break;
+        if(b==5)
+        {
+            if(c==6)
+            {
+                cout << endl << endl << "Uncle Ben what happened? SQUID GAMES!!!";
+            }
+        }
     }
+    
+    
+    if(a==1)
+    {
+        if(b==4)
+        {
+            if(c==1)
+            {
+                cout << endl << endl << "Task force 141...";
+            }
+        }
+    }
+    
     
     
     
