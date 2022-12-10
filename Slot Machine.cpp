@@ -268,6 +268,7 @@ int main()
         }
     }
     
+    
     if(a==1)
     {
         if(b==2)
@@ -289,6 +290,28 @@ int main()
             }
         }
     }
+    
+    
+    if(a==3)
+    {
+        if(b==6)
+        {
+            if(c==5)
+            {
+                cout << endl << endl << "    There are ____ Days in A Year!";
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     return 0;
 }
