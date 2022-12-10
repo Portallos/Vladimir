@@ -285,7 +285,7 @@ int main()
         {
             if(c==7)
             {
-                cout << endl << endl << "    Rick Roll was realeased on 27 of July, 1987;
+                cout << endl << endl << "    Rick Roll was realeased on 27 of July, 1987";
             }
         }
     }
