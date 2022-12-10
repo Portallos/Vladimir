@@ -9,9 +9,9 @@ int main()
     
     int a, b, c;
     srand(time(0));
-    a = (rand() % 9 );
-    b = (rand() % 9 );
-    c = (rand() % 9 );
+    a = (rand() % 9+1 );
+    b = (rand() % 9+1 );
+    c = (rand() % 9+1 );
 
     
     
