@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+    
     int a, b, c;
     srand(time(0));
     a = (rand() % 9 );
@@ -13,7 +14,7 @@ int main()
     c = (rand() % 9 );
 
     
-
+    
     cout << "   ";
     cout << "  _";
     cout << "_";
@@ -70,7 +71,7 @@ int main()
         {
             if(c==1)
             {
-                cout << endl << endl << "JACKPOT!";
+                cout << endl << endl << "    JACKPOT!";
             }
         }
     }
@@ -82,7 +83,7 @@ int main()
         {
             if(c==2)
             {
-                cout << endl << endl << "JACKPOT!";
+                cout << endl << endl << "    JACKPOT!";
             }
         }
     }
@@ -94,7 +95,7 @@ int main()
         {
             if(c==3)
             {
-                cout << endl << endl << "JACKPOT!";
+                cout << endl << endl << "    JACKPOT!";
             }
         }
     }
@@ -106,7 +107,7 @@ int main()
         {
             if(c==4)
             {
-                cout << endl << endl << "JACKPOT!";
+                cout << endl << endl << "    JACKPOT!";
             }
         }
     }
@@ -118,7 +119,7 @@ int main()
         {
             if(c==5)
             {
-                cout << endl << endl << "JACKPOT!";
+                cout << endl << endl << "    JACKPOT!";
             }
         }
     }
@@ -130,7 +131,7 @@ int main()
         {
             if(c==6)
             {
-                cout << endl << endl << "JACKPOT STRAIGHT FROM HELL!";
+                cout << endl << endl << "    JACKPOT STRAIGHT FROM HELL!";
             }
         }
     }
@@ -142,7 +143,7 @@ int main()
         {
             if(c==7)
             {
-                cout << endl << endl << "JACKPOT!";
+                cout << endl << endl << "    JACKPOT!";
             }
         }
     }
@@ -154,7 +155,7 @@ int main()
         {
             if(c==8)
             {
-                cout << endl << endl << "JACKPOT!";
+                cout << endl << endl << "    JACKPOT!";
             }
         }
     }
@@ -166,7 +167,7 @@ int main()
         {
             if(c==9)
             {
-                cout << endl << endl << "Basically a thousand!";
+                cout << endl << endl << "    Basically a thousand!";
             }
         }
     }
@@ -178,7 +179,7 @@ int main()
         {
             if(c==7)
             {
-                cout << endl << endl << "My name is Bond, James Bond.";
+                cout << endl << endl << "    My name is Bond, James Bond.";
             }
         }
     }
@@ -190,7 +191,7 @@ int main()
         {
             if(c==0)
             {
-                cout << endl << endl << "funni number, also don't do drugs!";
+                cout << endl << endl << "    funni number, also don't do drugs!";
             }
         }
     }
@@ -202,7 +203,7 @@ int main()
         {
             if(c==0)
             {
-                cout << endl << endl << "Seems like 12 Year Old Humor";
+                cout << endl << endl << "    Seems like 12 Year Old Humor";
             }
         }
     }
@@ -214,7 +215,7 @@ int main()
         {
             if(c==4)
             {
-                cout << endl << endl << "Minecraft";
+                cout << endl << endl << "    Minecraft";
             }
         }
     }
@@ -226,7 +227,7 @@ int main()
         {
             if(c==1)
             {
-                cout << endl << endl << "What's 9 + 10?";
+                cout << endl << endl << "    What's 9 + 10?";
             }
         }
     }
@@ -238,7 +239,7 @@ int main()
         {
             if(c==6)
             {
-                cout << endl << endl << "Uncle Ben what happened? SQUID GAMES!!!";
+                cout << endl << endl << "    Uncle Ben what happened? SQUID GAMES!!!";
             }
         }
     }
@@ -250,7 +251,7 @@ int main()
         {
             if(c==1)
             {
-                cout << endl << endl << "Task force 141...";
+                cout << endl << endl << "    Task force 141...";
             }
         }
     }
@@ -262,14 +263,32 @@ int main()
         {
             if(c==1)
             {
-                cout << endl << endl << "Yeah we got a, #1 Victory Royale, yeah Fortnite we 'bout to get down!";
+                cout << endl << endl << "    Yeah we got a, #1 Victory Royale, yeah Fortnite we 'bout to get down!";
             }
         }
     }
     
+    if(a==1)
+    {
+        if(b==2)
+        {
+            if(c==3)
+            {
+                cout << endl << endl << "    You know how to count to three, already better than Valve!";
+            }
+        }
+    }
     
-    
-    
+    if(a==9)
+    {
+        if(b==8)
+        {
+            if(c==7)
+            {
+                cout << endl << endl << "    Rick Roll was realeased on 27 of July, 1987;
+            }
+        }
+    }
     
     return 0;
 }
