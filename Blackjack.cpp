@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 #include <ctime>
 #include <cstdlib>
 using namespace std;
@@ -34,10 +33,12 @@ int main()
         if(a==1)
         {
             num+=1;
+            cout << endl;
         }
         else
         {
             num+=11;
+            cout << endl;
         }
     }
     
@@ -51,10 +52,12 @@ int main()
         if(a==1)
         {
             num+=1;
+            cout << endl;
         }
         else
         {
             num+=11;
+            cout << endl;
         }
     }
     
@@ -68,10 +71,12 @@ int main()
         if(a==1)
         {
             num+=1;
+            cout << endl;
         }
         else
         {
             num+=11;
+            cout << endl;
         }
     }
     
@@ -85,10 +90,12 @@ int main()
         if(a==1)
         {
             num+=1;
+            cout << endl;
         }
         else
         {
             num+=11;
+            cout << endl;
         }
     }
     
@@ -454,25 +461,31 @@ int main()
         cards++;
     }
     
-    cout << "Dealer:- Do you want another card";
-    if (n>2)
-    {
-        cards--;
-        
-        
-    }
-        int i = 1; 
-
-    cout << "Dealer:- Do you want another card?(Type Y for Yes and N for No)";
+    cout << "Dealer:- Do you want another card? (Type Y for Yes and N for No)" <<endl << endl;
+    cout<<"You:- ";
     cin >> response;
-    if (response == 'Y')
-    {
-        cards++;
+    
+    if (response == 'Y') 
+    {     
+        cout << endl << endl;
+          cout << "Dealer:- Another card then" << endl << endl;
+          cards--;
     }
-    else if (response == 'N')
-    {
-        
-    }
+    else     
+        {                  
+            if (response == 'N')         
+            {   
+                cout << endl << endl;
+                cout << "Dealer:- My turn then" << endl << endl;         
+            }         
+            else         
+            {   
+                cout << endl << endl;
+                cout <<"Dealer:- I don't think I understand" << endl << endl;  
+                
+            }               
+            
+        }
     
     
     if(num<=21)
@@ -484,7 +497,7 @@ int main()
         cout << endl << endl << "-----You lost!-----";
     }
     
-    cout << endl << endl << "Total:" << num;
+    cout << endl << endl << "    Total:" << num;
     
     
 
