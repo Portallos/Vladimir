@@ -461,6 +461,13 @@ int main()
         cards++;
     }
     
+
+
+
+    int understand=0;
+    
+    while(understand=1)
+    {
     cout << "Dealer:- Do you want another card? (Type Y for Yes and N for No)" <<endl << endl;
     cout<<"You:- ";
     cin >> response;
@@ -470,13 +477,17 @@ int main()
         cout << endl << endl;
           cout << "Dealer:- Another card then" << endl << endl;
           cards--;
+          understand++;
+          break;
     }
     else     
         {                  
             if (response == 'N')         
             {   
                 cout << endl << endl;
-                cout << "Dealer:- My turn then" << endl << endl;         
+                cout << "Dealer:- My turn then" << endl << endl;
+                understand++;
+                break;
             }         
             else         
             {   
@@ -486,7 +497,7 @@ int main()
             }               
             
         }
-    
+    }
     
     if(num<=21)
     {
@@ -497,8 +508,8 @@ int main()
         cout << endl << endl << "-----You lost!-----";
     }
     
-    cout << endl << endl << "    Total:" << num;
-    
+    cout << endl << endl << "  Total Points:" << num;
+    cout << endl << endl << "   Total cards:" << cards;
     
 
 
