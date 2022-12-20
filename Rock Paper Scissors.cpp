@@ -8,26 +8,37 @@ using namespace std;
 int main()
 {
     char rps;
+    int understand=0;
     int you, adv;
     srand(time(0));
     cout<<"Type R for Rock"<<endl;
     cout<<"Type P for Paper"<<endl;
     cout<<"Type S for Scissors"<<endl;
     
-    cin >> rps;
 
+    while(understand==0)
+    {
+        
+    cin >> rps;
+    
     if (rps == 'R')
     {
         you=1;
+        understand++;
     }
         if (rps == 'P')
     {
         you=2;
+        understand++;
     }
         if (rps == 'S')
     {
         you=3;
+        understand++;
     }
+    
+    }
+    
     
     adv = (rand() % 3+1 );
     
