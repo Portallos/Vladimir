@@ -9,7 +9,7 @@ int main()
 {   
     char response;
     int cards=0;
-    int n, a, b, c, d;
+    int n, a;
     int num=0;
     srand(time(0));
     
@@ -25,78 +25,68 @@ int main()
 
         if(n==1)
     {
-        cout<< "Ace of Spades  "<< endl << endl;
+        cout<< "Ace of Spades  ";
         
-        cout <<"Dealer:- Do you want your Ace to be an Eleven or an One?(Type 11 or 1)"<<endl<<endl<<"You:- ";
-        cin >> a;
         
-        if(a==1)
+        if(num>=11)
         {
             num+=1;
-            cout << endl;
         }
-        else
+        
+        if(num<=10)
         {
-            num+=11;
-            cout << endl;
+            num+11;
         }
+        cout << "(" << num << ")" << endl << endl;
+        
     }
     
         if(n==2)
     {
-        cout<< "Ace of Clubs  "<< endl << endl;
+        cout<< "Ace of Clubs  ";
         
-        cout <<"Dealer:- Do you want your Ace to be an Eleven or an One?(Type 11 or 1)"<<endl<<endl<<"You:- ";
-        cin >> a;
-        
-        if(a==1)
+        if(num>=11)
         {
             num+=1;
-            cout << endl;
         }
-        else
+        
+        if(num<=10)
         {
             num+=11;
-            cout << endl;
         }
+        cout << "(" << num << ")" << endl << endl;
     }
     
         if(n==3)
     {
-        cout<< "Ace of Hearts  "<< endl << endl;
+        cout<< "Ace of Hearts  ";
         
-        cout <<"Dealer:- Do you want your Ace to be an Eleven or an One?(Type 11 or 1)"<<endl<<endl<<"You:- ";
-        cin >> a;
-        
-        if(a==1)
+        if(num>=11)
         {
             num+=1;
-            cout << endl;
         }
-        else
+        
+        if(num<=10)
         {
             num+=11;
-            cout << endl;
         }
+        cout << "(" << num << ")" << endl << endl;
     }
     
         if(n==4)
     {
-        cout<< "Ace of Diamonds  "<< endl << endl;
+        cout<< "Ace of Diamonds  ";
         
-        cout <<"Dealer:- Do you want your Ace to be an Eleven or an One?(Type 11 or 1)"<<endl<<endl<<"You:- ";
-        cin >> a;
+        if(num>=11)
+        {
+            num+1;
+        }
         
-        if(a==1)
+        if(num<=10)
         {
-            num+=1;
-            cout << endl;
+            num+11;
         }
-        else
-        {
-            num+=11;
-            cout << endl;
-        }
+        cout << "(" << num << ")" << endl << endl;
     }
     
     //Two
@@ -479,6 +469,7 @@ int main()
           cards--;
           understand++;
           break;
+        
     }
     else     
         {                  
