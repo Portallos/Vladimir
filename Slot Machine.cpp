@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 #include <ctime>
 #include <cstdlib>
 using namespace std;
@@ -21,8 +20,7 @@ while(understand==0)
     
     if (response == 'Y') 
     {     
-        cout << endl << endl;
-          cout << "Dealer:- Another card then" << endl << endl;
+        cout << endl << endl << endl << endl;
           break;
         
     }
@@ -370,6 +368,7 @@ while(understand==0)
     cout << endl << endl << "       SCORE:" << num;
     
     understand--;
+    
     
 }
     
