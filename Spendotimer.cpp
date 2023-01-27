@@ -80,19 +80,24 @@ int main ()
         total=100;
     }
     
+    if(total>=10)
+    {
+        if(total<=99.9)
+        {
     cout << endl << endl <<  endl <<  endl <<  endl <<  endl << "    Total:";
     cout << endl <<"    _______";
     cout << endl <<"   |       |";
     cout << endl <<"   | "<< total <<" |" ;
     cout << endl <<"   |_______|";
-    
+        }
+    }
     
     if(total==0)
     {
         cout << endl << endl <<  endl <<  endl <<  endl <<  endl << "    Total:";
     cout << endl <<"    _______";
     cout << endl <<"   |       |";
-    cout << endl <<"   | "<< total <<" |" ;
+    cout << endl <<"   | "<< total <<"     |" ;
     cout << endl <<"   |_______|";
     
     }
@@ -108,5 +113,7 @@ int main ()
         
     cout << "   Times:" <<times;
     }
+    
   return 0;
+  
 }
