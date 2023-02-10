@@ -25,53 +25,130 @@ int main()
 
  while(times<=8)
 {
+    cout<<"      "<< a <<" | "<< b <<" | "<< c <<" "<< endl;
+    cout<<"     ---|---|---"<< endl;
+    cout<<"      "<< d <<" | "<< e <<" | "<< f <<" "<< endl;
+    cout<<"     ---|---|---"<< endl;
+    cout<<"      "<< g <<" | "<< h <<" | "<< i <<" "<< endl << endl;
+    
+    
     cin >> num;
     
     if(num==1)
     {
+    cout << endl;
+    if (n1==0)
+    {
         a='X';
         n1++;
     }
+    }
+
+
     if(num==2)
+    {
+    cout << endl;
+    if (n2==0)
     {
         b='X';
         n2++;
     }
-    if(num==3)
-    {
-        c='X';
-        
     }
-    if(num==4)
+    
+    
+    if(num==1)
     {
-        d='X';
+    cout << endl;
+    if (n1==0)
+    {
+        a='X';
         n1++;
     }
-    if(num==5)
+    }
+    cout << endl;
+    if (n2=0)
+    {
+        if(num==2)
+    {
+        b='X';
+        n2++;
+    }
+    }
+    
+    
+    cout << endl;
+    if (n3=0)
+    {
+        if(num==3)
+    {
+        c='X';
+        n3++;
+    }
+    }
+    
+    
+    cout << endl;
+    if (n4=0)
+    {
+        if(num==4)
+    {
+        d='X';
+        n4++;
+    }
+    }
+    
+    cout << endl;
+    if (n5=0)
+    {
+        if(num==5)
     {
         e='X';
         n5++;
     }
-    if(num==6)
+    }
+    
+    cout << endl;
+    if (n6=0)
+    {
+        if(num==6)
     {
         f=='X';
         n6++;
     }
-    if(num==7)
+    }
+    
+    cout << endl;
+    if (n7=0)
+    {
+        if(num==7)
     {
         g='X';
         n7++;
     }
-    if(num==8)
+    }
+    
+    
+    cout << endl;
+    if (n8=0)
+    {
+        if(num==8)
     {
         h='X';
         n8++;
     }
-    if(num==9)
+    }
+    
+    
+    cout << endl;
+    if (n9=0)
+    {
+        if(num==9)
     {
         i='X';
         n9++;
     }
+    }
+    
     
     cout<<"      "<< a <<" | "<< b <<" | "<< c <<" "<< endl;
     cout<<"     ---|---|---"<< endl;
@@ -81,51 +158,102 @@ int main()
     
 
     
-    cin >> mum;
-    if(mum==1)
+    cin >> num;
+    
+    
+    cout << endl;
+    if (n1=0)
+    {
+        if(mum==1)
     {
         a='O';
         n1++;
     }
-    if(mum==2)
+    }
+    
+    
+    cout << endl;
+    if (n2=0)
+    {
+        if(mum==2)
     {
         b='O';
         n2++;
     }
-    if(mum==3)
+    }
+    
+    
+    cout << endl;
+    if (n3=0)
+    {
+        if(mum==3)
     {
         c='O';
         n3++;
     }
-    if(mum==4)
+    }
+    
+    
+    cout << endl;
+    if (n4=0)
+    {
+        if(mum==4)
     {
         d='O';
         n4++;
     }
-    if(mum==5)
+    }
+    
+    cout << endl;
+    if (n5=0)
+    {
+        if(mum==5)
     {
         e='O';
         n5++;
     }
-    if(mum==6)
+    }
+    
+    cout << endl;
+    if (n6=0)
     {
-        f='O';
+        if(mum==6)
+    {
+        f=='O';
         n6++;
     }
-    if(mum==7)
+    }
+    
+    cout << endl;
+    if (n7=0)
+    {
+        if(mum==7)
     {
         g='O';
         n7++;
     }
-    if(mum==8)
+    }
+    
+    
+    cout << endl;
+    if (n8=0)
+    {
+        if(mum==8)
     {
         h='O';
         n8++;
     }
-    if(mum==9)
+    }
+    
+    
+    cout << endl;
+    if (n9=0)
+    {
+        if(mum==9)
     {
         i='O';
         n9++;
+    }
     }
     
     cout<<"      "<< a <<" | "<< b <<" | "<< c <<" "<< endl;
@@ -134,8 +262,7 @@ int main()
     cout<<"     ---|---|---"<< endl;
     cout<<"      "<< g <<" | "<< h <<" | "<< i <<" "<< endl << endl;
     
-    cout << endl;
-    if (n1=)
+    
     
     times++;
 }
