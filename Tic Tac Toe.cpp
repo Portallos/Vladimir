@@ -240,7 +240,7 @@ if(a=='X')
     {
         if(c=='X')
         {
-            cout<<"1st player wins!";
+            cout<<"  1st player wins!";
             return 0;
         }
     }
@@ -252,7 +252,7 @@ if(a=='X')
     {
         if(c=='X')
         {
-            cout<<"1st player wins!";
+            cout<<"  1st player wins!";
             return 0;
         }
     }
@@ -264,7 +264,7 @@ if(g=='X')
     {
         if(i=='X')
         {
-            cout<<"1st player wins!";
+            cout<<"  1st player wins!";
             return 0;
         }
     }
@@ -276,7 +276,7 @@ if(a=='X')
     {
         if(g=='X')
         {
-            cout<<"1st player wins!";
+            cout<<"  1st player wins!";
             return 0;
         }
     }
@@ -288,7 +288,7 @@ if(b=='X')
     {
         if(h=='X')
         {
-            cout<<"1st player wins!";
+            cout<<"  1st player wins!";
             return 0;
         }
     }
@@ -300,7 +300,7 @@ if(c=='X')
     {
         if(i=='X')
         {
-            cout<<"1st player wins!";
+            cout<<"  1st player wins!";
             return 0;
         }
     }
@@ -313,7 +313,7 @@ if(c=='X')
     {
         if(g=='X')
         {
-            cout<<"1st player wins!";
+            cout<<"  1st player wins!";
             return 0;
         }
     }
@@ -325,7 +325,7 @@ if(a=='X')
     {
         if(i=='X')
         {
-            cout<<"1st player wins!";
+            cout<<"  1st player wins!";
             return 0;
         }
     }
@@ -543,7 +543,7 @@ if(a=='O')
     {
         if(c=='O')
         {
-            cout<<"2nd player wins!";
+            cout<<"  2nd player wins!";
             return 0;
         }
     }
@@ -555,7 +555,7 @@ if(a=='O')
     {
         if(c=='O')
         {
-            cout<<"2nd player wins!";
+            cout<<"  2nd player wins!";
             return 0;
         }
     }
@@ -567,7 +567,7 @@ if(g=='O')
     {
         if(i=='O')
         {
-            cout<<"2nd player wins!";
+            cout<<"  2nd player wins!";
             return 0;
         }
     }
@@ -579,7 +579,7 @@ if(a=='O')
     {
         if(g=='O')
         {
-            cout<<"2nd player wins!";
+            cout<<"  2nd player wins!";
             return 0;
         }
     }
@@ -591,7 +591,7 @@ if(b=='O')
     {
         if(h=='O')
         {
-            cout<<"2nd player wins!";
+            cout<<"  2nd player wins!";
             return 0;
         }
     }
@@ -603,7 +603,7 @@ if(c=='O')
     {
         if(i=='O')
         {
-            cout<<"2nd player wins!";
+            cout<<"  2nd player wins!";
             return 0;
         }
     }
@@ -615,7 +615,7 @@ if(c=='O')
     {
         if(g=='O')
         {
-            cout<<"2nd player wins!";
+            cout<<"  2nd player wins!";
             return 0;
         }
     }
@@ -627,7 +627,7 @@ if(a=='O')
     {
         if(i=='O')
         {
-            cout<<"2nd player wins!";
+            cout<<"  2nd player wins!";
             return 0;
         }
     }
