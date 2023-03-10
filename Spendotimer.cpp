@@ -33,7 +33,7 @@ int main ()
 	      if (response == 'N')
 		{
 		  cout << endl << endl;
-		  cout << "Ok" << endl << endl;
+		  cout << "-----You Lost!-----" << endl << endl;
 		  understand++;
 		  break;
 		  return 0;
@@ -55,11 +55,8 @@ int main ()
     a = (rand () % 10000 + 1);
     n = a / 100;
 
-    cout << endl << "    Newest:";
-    cout << endl <<"    _______";
-    cout << endl <<"   |       |";
-    cout << endl <<"   | "<< n <<" |" ;
-    cout << endl <<"   |_______|";
+    cout << endl <<"   Total: " <<total;
+
     if(n<50)
     {
         total+=n;
@@ -80,27 +77,8 @@ int main ()
         total=100;
     }
     
-    if(total>=10)
-    {
-        if(total<=99.9)
-        {
-    cout << endl << endl <<  endl <<  endl <<  endl <<  endl << "    Total:";
-    cout << endl <<"    _______";
-    cout << endl <<"   |       |";
-    cout << endl <<"   | "<< total <<" |" ;
-    cout << endl <<"   |_______|";
-        }
-    }
-    
-    if(total==0)
-    {
-        cout << endl << endl <<  endl <<  endl <<  endl <<  endl << "    Total:";
-    cout << endl <<"    _______";
-    cout << endl <<"   |       |";
-    cout << endl <<"   | "<< total <<"     |" ;
-    cout << endl <<"   |_______|";
-    
-    }
+
+        cout << "   Newest: " << n ;
     understand--;
     times++;
     if(total == 50)
@@ -111,7 +89,7 @@ int main ()
             return 0;
         }
         
-    cout << "   Times:" <<times;
+    cout << "   Times: " <<times;
     }
     
   return 0;
