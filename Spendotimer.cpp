@@ -5,20 +5,21 @@ using namespace std;
 
 int main ()
 {
-   
-  float n, a, total=50;
-  int times=0;
-  char response;
-  int understand = 0;
+    
+    float n, a, total=50;
+    int times=0;
+    char response;
+    int understand = 0;
 
-  while (understand == 0)
+    cout << endl <<"   Hello! In this game you have to reach 50.00 again, the exact number you had at the start.";
+
+    while (understand == 0)
     {
 
       while (understand = 1)
 	{
-	  cout << endl << endl <<
-	    "Do you want to continue? (Type Y for Yes and N for No)" << endl
-	    << endl;
+	  cout << endl << endl << "Do you want to continue? (Type Y for Yes and N for No)" << endl << endl;
+	  
 	  cout << "You:- ";
 	  cin >> response;
 
@@ -55,16 +56,16 @@ int main ()
     a = (rand () % 10000 + 1);
     n = a / 100;
 
-    cout << endl <<"   Total: " <<total;
+
 
     if(n<50)
     {
-        total+=n;
+        total-=n;
     }
 
     if(n>50)
     {
-        total-=n;
+        total+=n;
     }
 
     if(total < 0)
@@ -77,8 +78,9 @@ int main ()
         total=100;
     }
     
-
-        cout << "   Newest: " << n ;
+    cout << endl <<"   Total: " <<total;
+    cout << "   Newest: " << n ;
+    
     understand--;
     times++;
     if(total == 50)
