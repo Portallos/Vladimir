@@ -21,6 +21,7 @@ int main()
     cout<< endl << endl << endl << endl << endl << endl << endl <<"Scrima";
     usleep(500000);
     cout<< endl << endl << endl << endl << endl << endl << endl <<"Scrima!";
+    //☭
     
     cout<< endl << endl << endl << endl << endl << endl << endl;;
     
