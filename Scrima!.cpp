@@ -7,24 +7,32 @@ using namespace std;
 int main()
 {
     
-    int n;
+    int precision, mental, chance, reaction, fitness, o_precision, o_mental, o_chance, o_reaction, o_fitness;
     cout<< endl << endl << endl << endl << endl << endl << endl <<"S";
-    usleep(500000);
+    usleep(750000);
     cout<< endl << endl << endl << endl << endl << endl << endl <<"Sc";
-    usleep(500000);
+    usleep(750000);
     cout<< endl << endl << endl << endl << endl << endl << endl <<"Scr";
-    usleep(500000);
+    usleep(750000);
     cout<< endl << endl << endl << endl << endl << endl << endl <<"Scri";
-    usleep(500000);
+    usleep(750000);
     cout<< endl << endl << endl << endl << endl << endl << endl <<"Scrim";
-    usleep(500000);
+    usleep(750000);
     cout<< endl << endl << endl << endl << endl << endl << endl <<"Scrima";
-    usleep(500000);
+    usleep(750000);
     cout<< endl << endl << endl << endl << endl << endl << endl <<"Scrima!";
-    //☭
+    cout<< endl << endl << endl << endl << endl << endl;
     
-    cout<< endl << endl << endl << endl << endl << endl << endl;;
+    cout<<"Precision: "<<endl;
+    cin>>precision;
+    cout<<"mental: "<<endl;
+    cin>>mental;
+    cout<<"chance: "<<endl;
+    cin>>chance;
+    cout<<"reaction: "<<endl;
+    cin>>reaction;
+    cout<<"fitness: "<<endl;
+    cin>>fitness;
     
-    cin>>n;
     return 0;
 }
