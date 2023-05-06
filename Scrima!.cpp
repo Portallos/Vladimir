@@ -126,7 +126,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|‾‾‾|"<<endl;
        }
    }
    
@@ -161,7 +161,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|‾‾‾|"<<endl;
        }
    }
    
@@ -197,7 +197,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|___|"<<endl;
        }
    }
    
@@ -287,7 +287,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|‾‾‾|"<<endl;
        }
    }
    
@@ -323,7 +323,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|___|"<<endl;
        }
    }
    
@@ -359,7 +359,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|___|"<<endl;
        }
    }
    
@@ -372,7 +372,7 @@ while(match_finish==0)
    {
    cout<<"|   |"<<endl;
    }
-   cout<<" ‾‾‾"<<endl;
+   cout<<" ‾‾‾"<<endl<<endl<<endl<<endl<<endl;
    usleep (1000000);
 }
 match_finish=0;
