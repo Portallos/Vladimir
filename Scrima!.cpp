@@ -73,8 +73,25 @@ cout << "Fitness: " << endl;
   
 cin >> fitness;
 
-   while(match_finish==0)
-   {
+piste[1]=0;
+piste[2]=0;
+piste[3]=0;
+piste[4]=0;
+piste[5]=0;
+piste[6]=2;
+piste[7]=0;
+piste[8]=0;
+piste[9]=0;
+piste[10]=0;
+piste[11]=1;
+piste[12]=0;
+piste[13]=0;
+piste[14]=0;
+piste[15]=0;
+piste[16]=0;
+
+while(match_finish==0)
+{
    if(score==5)
    {
        match_finish++;
@@ -88,7 +105,7 @@ cin >> fitness;
    cout<<" ___"<<endl;
    if(piste[1]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |"<<endl;
    }
    else
    {
@@ -99,295 +116,268 @@ cin >> fitness;
    //piste 2
    if(piste[2]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|‾‾‾|"<<endl;
+       if(piste[2]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
-   
-   if(piste[2]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|‾‾‾|"<<endl;
-   }
-   
    
    //piste 3
+
    if(piste[3]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
+       if(piste[3]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
-   
-   if(piste[3]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
-   }
-   
    
    //piste 4
    if(piste[4]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[4]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[4]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 5
    if(piste[5]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[5]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[5]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 6
    if(piste[6]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[6]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[6]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 7
    if(piste[7]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[7]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[7]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 8
    if(piste[8]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[8]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[8]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 9
    if(piste[9]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[9]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[9]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 10
    if(piste[10]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[10]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[10]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 11
    if(piste[11]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[11]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[11]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 12
    if(piste[12]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[12]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[12]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 13
    if(piste[13]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[13]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[13]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 14
    if(piste[14]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[14]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[14]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    
    //piste 15
    if(piste[15]==2)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
    }
    else
    {
-   cout<<"|   |"<<endl;
-   }
-   
-   if(piste[15]==1)
-   {
-   cout<<"|🤺 |"<<endl;
-   }
-   else
-   {
-   cout<<"|   |"<<endl;
+       if(piste[15]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
    }
    
    //piste 16
    if(piste[16]==1)
    {
-   cout<<"|🤺 |"<<endl;
+   cout<<"|🤺  |"<<endl;
    }
    else
    {
-   cout<<"|___|"<<endl;
+   cout<<"|   |"<<endl;
    }
    cout<<" ‾‾‾"<<endl;
-   usleep (500000);
+   usleep (1000000);
 }
-match_finish==0;
+match_finish=0;
+o_score=0;
+score=0;
  
  
  
