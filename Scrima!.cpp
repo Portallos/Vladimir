@@ -105,11 +105,11 @@ while(match_finish==0)
    cout<<" ___"<<endl;
    if(piste[1]==2)
    {
-   cout<<"|🤺  |"<<endl;
+   cout<<"|🤺  |  <-- Opponent"<<endl;
    }
    else
    {
-   cout<<"|   |"<<endl;
+   cout<<"|___|"<<endl;
    }
    
    
@@ -126,7 +126,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|‾‾‾|"<<endl;
+       cout<<"|▧▧▧|"<<endl;
        }
    }
    
@@ -144,7 +144,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|▧▧▧|"<<endl;
        }
    }
    
@@ -341,7 +341,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|▧▧▧|"<<endl;
        }
    }
    
@@ -359,18 +359,18 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|___|"<<endl;
+       cout<<"|▧▧▧|"<<endl;
        }
    }
    
    //piste 16
    if(piste[16]==1)
    {
-   cout<<"|🤺  |"<<endl;
+   cout<<"|🤺  |  <-- You"<<endl;
    }
    else
    {
-   cout<<"|   |"<<endl;
+   cout<<"|‾‾‾|"<<endl;
    }
    cout<<" ‾‾‾"<<endl<<endl<<endl<<endl<<endl;
    usleep (1000000);
