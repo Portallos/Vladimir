@@ -1,5 +1,8 @@
 #include <iostream> //default
 
+#include<vector> //ignore cin
+#include <climits>
+
 #include <cstdlib> //wait
 #include <unistd.h>
 
@@ -11,8 +14,6 @@
  
 int main () 
 {
-
-
 
 int piste[16];
   
@@ -90,17 +91,15 @@ piste[14]=0;
 piste[15]=0;
 piste[16]=0;
 
+char one;
+
 while(match_finish==0)
 {
-   if(score==5)
-   {
-       match_finish++;
-   }
    
-   if(o_score==5)
-   {
-       match_finish++;
-   }
+   usleep (1000000);
+   cin >> one;
+   std::cin.ignore(CHAR_MAX);
+   
    //piste 1
    cout<<" ___"<<endl;
    if(piste[1]==2)
@@ -373,8 +372,20 @@ while(match_finish==0)
    cout<<"|‾‾‾|"<<endl;
    }
    cout<<" ‾‾‾"<<endl<<endl<<endl<<endl<<endl;
-   usleep (1000000);
+   
+   if(score==5)
+   {
+       match_finish++;
+   }
+   
+   if(o_score==5)
+   {
+       match_finish++;
+   }
+   
+
 }
+
 match_finish=0;
 o_score=0;
 score=0;
