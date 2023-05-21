@@ -91,14 +91,19 @@ piste[14]=0;
 piste[15]=0;
 piste[16]=0;
 
-char one;
+char one[80];
 
 while(match_finish==0)
 {
+
+   while(*one)
+   {
+      cin>>one;
+      if(*one) cout<<"hm "<<one<<"hm "<<endl;
+      usleep (1000000);
+   }
    
    usleep (1000000);
-   cin >> one;
-   std::cin.ignore(CHAR_MAX);
    
    //piste 1
    cout<<" ___"<<endl;
@@ -125,7 +130,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|▧▧▧|"<<endl;
+       cout<<"|   |"<<endl;
        }
    }
    
@@ -143,7 +148,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|▧▧▧|"<<endl;
+       cout<<"|   |"<<endl;
        }
    }
    
@@ -282,7 +287,7 @@ while(match_finish==0)
    {
        if(piste[11]==1)
        {
-       cout<<"|🤺  |  <-- You"<<endl;
+       cout<<"|🤺‾‾‾|  <-- You"<<endl;
        }
        else
        {
@@ -340,7 +345,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|▧▧▧|"<<endl;
+       cout<<"|   |"<<endl;
        }
    }
    
@@ -358,7 +363,7 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|▧▧▧|"<<endl;
+       cout<<"|   |"<<endl;
        }
    }
    
@@ -383,7 +388,6 @@ while(match_finish==0)
        match_finish++;
    }
    
-
 }
 
 match_finish=0;
