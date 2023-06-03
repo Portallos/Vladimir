@@ -1,17 +1,21 @@
 #include <iostream> //default
 
-#include<vector> //ignore cin
-#include <climits>
+#include <thread> //ignore cin
 
 #include <cstdlib> //wait
 #include <unistd.h>
 
 #include <ctime> //random
-#include <cstdlib>
 
- using namespace std;
+#include <chrono> //sleep_for
 
- 
+using namespace std;
+
+void getInput(char& n)
+{
+    cin >> n; 
+}
+
 int main () 
 {
 
@@ -91,19 +95,17 @@ piste[14]=0;
 piste[15]=0;
 piste[16]=0;
 
-char one[80];
+char one;
 
 while(match_finish==0)
 {
 
-   while(*one)
-   {
-      cin>>one;
-      if(*one) cout<<"hm "<<one<<"hm "<<endl;
-      usleep (1000000);
-   }
+   std::thread inputThread(getInput, std::ref(one));
+   std::this_thread::sleep_for(std::chrono::seconds(1));
    
-   usleep (1000000);
+   if (inputThread.joinable()) {
+        inputThread.detach(); 
+    }
    
    //piste 1
    cout<<" ___"<<endl;
@@ -287,7 +289,7 @@ while(match_finish==0)
    {
        if(piste[11]==1)
        {
-       cout<<"|🤺‾‾‾|  <-- You"<<endl;
+       cout<<"|🤺  |  <-- You"<<endl;
        }
        else
        {
@@ -388,6 +390,8 @@ while(match_finish==0)
        match_finish++;
    }
    
+   
+   cout<<one;
 }
 
 match_finish=0;
