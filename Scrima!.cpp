@@ -95,12 +95,12 @@ piste[14]=0;
 piste[15]=0;
 piste[16]=0;
 
-char one;
+char input;
 
 while(match_finish==0)
 {
 
-   std::thread inputThread(getInput, std::ref(one));
+   std::thread inputThread(getInput, std::ref(input));
    std::this_thread::sleep_for(std::chrono::seconds(1));
    
    if (inputThread.joinable()) {
@@ -391,7 +391,12 @@ while(match_finish==0)
    }
    
    
-   cout<<one;
+   if(input=='w')
+   {
+       
+   }
+   
+   
 }
 
 match_finish=0;
