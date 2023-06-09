@@ -9,6 +9,8 @@
 
 #include <chrono> //sleep_for
 
+#include <vector> //piste
+
 using namespace std;
 
 void getInput(char& n)
@@ -18,10 +20,9 @@ void getInput(char& n)
 
 int main () 
 {
-
-int piste[16];
   
-int precision, mental, chance, reaction, fitness, o_precision, o_mental, o_chance, o_reaction, o_fitness;
+int precision, mental, chance, reaction, fitness;
+int o_precision, o_mental, o_chance, o_reaction, o_fitness;
 
 int score, o_score, match_finish=0;
 
@@ -78,34 +79,24 @@ cout << "Fitness: " << endl;
   
 cin >> fitness;
 
-piste[1]=0;
-piste[2]=0;
-piste[3]=0;
-piste[4]=0;
-piste[5]=0;
-piste[6]=2;
-piste[7]=0;
-piste[8]=0;
-piste[9]=0;
-piste[10]=0;
-piste[11]=1;
-piste[12]=0;
-piste[13]=0;
-piste[14]=0;
-piste[15]=0;
-piste[16]=0;
+std::vector<int> piste(16, 0);
+
+
+
+int o_position = 6;
+
+piste[o_position] = 2;
+
+int position = 11;
+
+piste[position] = 1;
+
+
 
 char input;
 
 while(match_finish==0)
 {
-
-   std::thread inputThread(getInput, std::ref(input));
-   std::this_thread::sleep_for(std::chrono::seconds(1));
-   
-   if (inputThread.joinable()) {
-        inputThread.detach(); 
-    }
    
    //piste 1
    cout<<" ___"<<endl;
@@ -390,12 +381,34 @@ while(match_finish==0)
        match_finish++;
    }
    
+   input = ' ';
    
-   if(input=='w')
-   {
-       
+   std::thread inputThread(getInput, std::ref(input));
+   std::this_thread::sleep_for(std::chrono::seconds(1));
+   
+   if (inputThread.joinable()) {
+        inputThread.detach(); 
    }
    
+   
+   
+   
+   if (input == 'w' && position > 0 && position - 1 != o_position)
+   {
+
+            piste[position] = 0; // Clear the current position
+            position--; // Move the 1 up
+            piste[position] = 1; // Update the new position with
+    } 
+    else
+    {
+        if (input == 's' && position < 15 && position + 1 != o_position)
+        {
+            piste[position] = 0; // Clear the current position
+            position++; // Move the 1 down
+            piste[position] = 1; // Update the new position with 1
+        }
+    }
    
 }
 
