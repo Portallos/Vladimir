@@ -24,6 +24,8 @@ int main ()
 int precision, mental, chance, reaction, fitness;
 int o_precision, o_mental, o_chance, o_reaction, o_fitness;
 
+int o_move;
+
 int score, o_score, match_finish=0;
 
 //intro
@@ -83,11 +85,11 @@ std::vector<int> piste(16, 0);
 
 
 
-int o_position = 6;
+int o_position = 5;
 
 piste[o_position] = 2;
 
-int position = 11;
+int position = 10;
 
 piste[position] = 1;
 
@@ -97,20 +99,38 @@ char input;
 
 while(match_finish==0)
 {
-   
+   cout << endl << endl << endl;
    //piste 1
    cout<<" ___"<<endl;
-   if(piste[1]==2)
+   if(piste[0]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl;
    }
    else
    {
-   cout<<"|___|"<<endl;
+   cout<<"|   |"<<endl;
    }
    
    
    //piste 2
+   if(piste[1]==2)
+   {
+   cout<<"|🤺  |  <-- Opponent"<<endl; 
+   }
+   else
+   {
+       if(piste[1]==1)
+       {
+       cout<<"|🤺  |  <-- You"<<endl;
+       }
+       else
+       {
+       cout<<"|   |"<<endl;
+       }
+   }
+   
+   //piste 3
+
    if(piste[2]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -127,8 +147,7 @@ while(match_finish==0)
        }
    }
    
-   //piste 3
-
+   //piste 4
    if(piste[3]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -141,11 +160,12 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|‾‾‾|"<<endl;
        }
    }
    
-   //piste 4
+   
+   //piste 5
    if(piste[4]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -158,12 +178,12 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|‾‾‾|"<<endl;
+       cout<<"|   |"<<endl;
        }
    }
    
    
-   //piste 5
+   //piste 6
    if(piste[5]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -176,12 +196,12 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|___|"<<endl;
        }
    }
    
    
-   //piste 6
+   //piste 7
    if(piste[6]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -194,12 +214,12 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|___|"<<endl;
+       cout<<"|   |"<<endl;
        }
    }
    
    
-   //piste 7
+   //piste 8
    if(piste[7]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -217,7 +237,7 @@ while(match_finish==0)
    }
    
    
-   //piste 8
+   //piste 9
    if(piste[8]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -235,7 +255,7 @@ while(match_finish==0)
    }
    
    
-   //piste 9
+   //piste 10
    if(piste[9]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -253,7 +273,7 @@ while(match_finish==0)
    }
    
    
-   //piste 10
+   //piste 11
    if(piste[10]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -266,12 +286,12 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|‾‾‾|"<<endl;
        }
    }
    
    
-   //piste 11
+   //piste 12
    if(piste[11]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -284,12 +304,12 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|‾‾‾|"<<endl;
+       cout<<"|   |"<<endl;
        }
    }
    
    
-   //piste 12
+   //piste 13
    if(piste[12]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -302,12 +322,12 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|   |"<<endl;
+       cout<<"|___|"<<endl;
        }
    }
    
    
-   //piste 13
+   //piste 14
    if(piste[13]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -320,12 +340,12 @@ while(match_finish==0)
        }
        else
        {
-       cout<<"|___|"<<endl;
+       cout<<"|   |"<<endl;
        }
    }
    
    
-   //piste 14
+   //piste 15
    if(piste[14]==2)
    {
    cout<<"|🤺  |  <-- Opponent"<<endl; 
@@ -342,26 +362,8 @@ while(match_finish==0)
        }
    }
    
-   
-   //piste 15
-   if(piste[15]==2)
-   {
-   cout<<"|🤺  |  <-- Opponent"<<endl; 
-   }
-   else
-   {
-       if(piste[15]==1)
-       {
-       cout<<"|🤺  |  <-- You"<<endl;
-       }
-       else
-       {
-       cout<<"|   |"<<endl;
-       }
-   }
-   
    //piste 16
-   if(piste[16]==1)
+   if(piste[15]==1)
    {
    cout<<"|🤺  |  <-- You"<<endl;
    }
@@ -371,17 +373,25 @@ while(match_finish==0)
    }
    cout<<" ‾‾‾"<<endl<<endl<<endl<<endl<<endl;
    
+   
    if(score==5)
    {
        match_finish++;
    }
+   
    
    if(o_score==5)
    {
        match_finish++;
    }
    
+   
+   
    input = ' ';
+   
+   o_move =3;
+   
+   
    
    std::thread inputThread(getInput, std::ref(input));
    std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -390,8 +400,10 @@ while(match_finish==0)
         inputThread.detach(); 
    }
    
+    srand(time(0));
+    o_move = (rand() % 3+1 );
    
-   
+   //Your Movement
    
    if (input == 'w' && position > 0 && position - 1 != o_position)
    {
@@ -410,6 +422,52 @@ while(match_finish==0)
         }
     }
    
+   
+    //Opponent Movement
+   
+    if (o_move == 1 && o_position > 0 && o_position - 1 != position)
+    {
+
+            piste[o_position] = 0; // Clear the current position
+            o_position--; // Move the 1 up
+            piste[o_position] = 2; // Update the new position with
+    } 
+    else
+    {
+        if (o_move == 2 && o_position < 15 && o_position + 1 != position)
+        {
+            piste[o_position] = 0; // Clear the current position
+            o_position++; // Move the 1 down
+            piste[o_position] = 2; // Update the new position with 1
+        }
+    }
+   
+   
+   
+    if(o_position==0)
+    {
+        score++;
+    }
+    
+    if(position==15)
+    {
+        o_score++;
+    }
+    
+    //Finish
+    
+    if(score==5)
+   {
+       match_finish++;
+       cout<<"You Won!";
+   }
+   
+   
+   if(o_score==5)
+   {
+       match_finish++;
+       cout<<"You Lost!";
+   }
 }
 
 match_finish=0;
