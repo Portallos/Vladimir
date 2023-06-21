@@ -93,7 +93,7 @@ int position = 10;
 
 piste[position] = 1;
 
-
+int o_attackchance;
 
 char input;
 
@@ -403,6 +403,8 @@ while(match_finish==0)
     srand(time(0));
     o_move = (rand() % 3+1 );
    
+   srand(time(0));
+   o_attackchance = (rand() % 2+1 );
    //Your Movement
    
    if (input == 'w' && position > 0 && position - 1 != o_position)
@@ -454,6 +456,8 @@ while(match_finish==0)
         o_score++;
     }
     
+    
+    
     //Finish
     
     if(score==5)
@@ -468,13 +472,27 @@ while(match_finish==0)
        match_finish++;
        cout<<"You Lost!";
    }
-}
+
+
+    //Attack
+    
+    if( position - 1 == o_position && input == 'a')
+    {
+        score++;
+    }
+    
+    if( position + 1 == o_position && o_move == 3 && o_attackchance)
+    {
+        o_score++;
+    }
+    
+}  
 
 match_finish=0;
 o_score=0;
 score=0;
  
- 
+
  
 return 0;
 
