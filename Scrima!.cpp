@@ -391,7 +391,7 @@ while(match_finish==0)
    
    o_move =3;
    
-   
+   cout << "Your Score: " << score << "   Opponent Score: " << o_score <<endl;
    
    std::thread inputThread(getInput, std::ref(input));
    std::this_thread::sleep_for(std::chrono::seconds(1));
@@ -400,11 +400,12 @@ while(match_finish==0)
         inputThread.detach(); 
    }
    
+   
+   
     srand(time(0));
     o_move = (rand() % 3+1 );
    
-   srand(time(0));
-   o_attackchance = (rand() % 2+1 );
+   
    //Your Movement
    
    if (input == 'w' && position > 0 && position - 1 != o_position)
@@ -463,20 +464,23 @@ while(match_finish==0)
     if(score==5)
    {
        match_finish++;
-       cout<<"You Won!";
+       cout<<endl<<endl<<"You Won!";
    }
    
    
    if(o_score==5)
    {
        match_finish++;
-       cout<<"You Lost!";
+       cout<<endl<<endl<<"You Lost!";
    }
 
 
     //Attack
     
-    if( position - 1 == o_position && input == 'a')
+    srand(time(0));
+    o_attackchance = (rand() % 2+1 );
+    
+    if( position - 1 == o_position && input == 'w')
     {
         score++;
     }
