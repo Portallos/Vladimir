@@ -1,6 +1,6 @@
 #include <iostream>
 
- using namespace std;
+using namespace std;
 
  
 int
@@ -39,10 +39,6 @@ char i = 'I';
   
 cout << endl << endl;
   
- 
-while (times <= 8)
-    
-    {
       
 cout << "      " << a << " | " << b << " | " << c << " " << endl;
       
@@ -53,8 +49,13 @@ cout << "      " << d << " | " << e << " | " << f << " " << endl;
 cout << "     ---|---|---" << endl;
       
 cout << "      " << g << " | " << h << " | " << i << " " << endl << endl;
-      
  
+ 
+ 
+while (times <= 8)
+    
+{
+
  
 cin >> num;
       
