@@ -146,10 +146,7 @@ sleep (2);
 
 //Menu
 
-while(exit==0)
-{
-    
-cout<< "MAIN MENU:"<<endl<<endl;
+cout<< "MAIN MENU"<<endl<<endl;
 cout<< "1.Campaign"<<endl;
 cout<< "2.Custom"<<endl;
 cout<< "3.COMING SOON"<<endl;
@@ -157,9 +154,12 @@ cout<< "4.Exit"<<endl;
 cout<< "Choice:";
 cin>>menuchoice;
 
+while(exit==0)
+{
+    
 //Menu error
 
-if(menuchoice>4)
+if(menuchoice<1)
 {
     
     cout<< "                     _                       _ "<<endl;
@@ -179,19 +179,17 @@ if(menuchoice>4)
         
         linewait = 0;
         
-    cout<< "MAIN MENU:"<<endl<<endl;
+    cout<< "MAIN MENU"<<endl<<endl;
     cout<< "1.Campaign"<<endl;
     cout<< "2.Custom"<<endl;
     cout<< "3.COMING SOON"<<endl;
     cout<< "4.Exit"<<endl;
     cout<< "Choice:";
     cin>>menuchoice;
-        
-    }
+}
+
     
-    else
-    {
-        
+
         if(menuchoice==1)
         {
             return 0;
@@ -212,37 +210,35 @@ if(menuchoice>4)
             return 0;
         }
         
-        if(menuchoice<1)
+if(menuchoice>4)
+{
+    
+    cout<< "                     _                       _ "<<endl;
+    cout<< "                    (_)                     | |"<<endl;
+    cout<< " ___    ___   ____   _   ________     ____  | |"<<endl;
+    cout<< "/ __|  / __| |  __| | | |  _   _ \\   / _  | | |"<<endl;
+    cout<< "\\__ \\ | (__  | |    | | | | | | | | | (_| | |_|"<<endl;
+    cout<< "|___/  \\___| |_|    |_| |_| |_| |_|  \\__,_| (_)"<<endl;
+    
+    
+        while(linewait<30)
         {
+        cout<<endl;
         
-        cout<< "                     _                       _ "<<endl;
-        cout<< "                    (_)                     | |"<<endl;
-        cout<< " ___    ___   ____   _   ________     ____  | |"<<endl;
-        cout<< "/ __|  / __| |  __| | | |  _   _ \\   / _  | | |"<<endl;
-        cout<< "\\__ \\ | (__  | |    | | | | | | | | | (_| | |_|"<<endl;
-        cout<< "|___/  \\___| |_|    |_| |_| |_| |_|  \\__,_| (_)"<<endl;
-            
-            
-            while(linewait<30)
-            {
-            cout<<endl;
-            
-            linewait++;
-            }
-            
-            linewait = 0;
-            
-        cout<< "MAIN MENU:"<<endl<<endl;
-        cout<< "1.Campaign"<<endl;
-        cout<< "2.Custom"<<endl;
-        cout<< "3.COMING SOON"<<endl;
-        cout<< "4.Exit"<<endl;
-        cout<< "Choice:";
-        cin>>menuchoice;
-            
+        linewait++;
         }
-    }
-
+        
+        linewait = 0;
+    
+    cout<< "MAIN MENU"<<endl<<endl;
+    cout<< "1.Campaign"<<endl;
+    cout<< "2.Custom"<<endl;
+    cout<< "3.COMING SOON"<<endl;
+    cout<< "4.Exit"<<endl;
+    cout<< "Choice:";
+    cin>>menuchoice;
+}
+    
 
 }
 
