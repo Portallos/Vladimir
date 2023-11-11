@@ -29,37 +29,6 @@ int o_move;
 int score, o_score, match_finish=0;
 
 //intro
-
-cout << endl << endl << endl << endl << endl << endl << endl << "S";
-  
-usleep (750000);
-  
-cout << endl << endl << endl << endl << endl << endl << endl << "Sc";
-  
-usleep (750000);
-  
-cout << endl << endl << endl << endl << endl << endl << endl << "Scr";
-  
-usleep (750000);
-  
-cout << endl << endl << endl << endl << endl << endl << endl << "Scri";
-  
-usleep (750000);
-  
-cout << endl << endl << endl << endl << endl << endl << endl << "Scrim";
-  
-usleep (750000);
-  
-cout << endl << endl << endl << endl << endl << endl << endl << "Scrima";
-  
-usleep (750000);
-  
-cout << endl << endl << endl << endl << endl << endl << endl << "Scrima!";
-
-usleep (750000);
-
-cout << endl << endl << endl << endl << endl << endl;
-  
  
 cout << "Precision: " << endl;
   
