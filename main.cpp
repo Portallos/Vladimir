@@ -189,26 +189,34 @@ if(menuchoice<1)
 }
 
     
-
+        //Campaign
         if(menuchoice==1)
         {
             return 0;
         }
         
+        
+        //Custom
         if(menuchoice==2)
         {
-            return 0;
+            
         }
         
+        
+        //COMING SOON
         if(menuchoice==3)
         {
             return 0;
         }
         
+        
+        //Exit
         if(menuchoice==4)
         {
             return 0;
         }
+        
+        
         
 if(menuchoice>4)
 {
