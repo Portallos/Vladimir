@@ -8,15 +8,77 @@ int main()
 {
 	char response;
 	int total, dealertotal, hit, ace, dealerhit;
-	bool understand=true;
-	while((true))
-	{
-		cin>>response;//Hit or Stand
+	bool rulecard5, stand;
+	srand (time (0));
+
+	    total=0;
+	    dealertotal=16;
+	    rulecard5=false;
+	    stand=false;
+	    
+	    hit = rand()%13+ 1;//CARD1
+	    if(hit==1)
+			{	cout<<"Ace(1/11): ";
+				cin>>ace;
+                total+=ace;
+                ace=0;
+			}
+			if(hit==11)
+			{
+			    total+=10;
+			    hit=0;
+			}
+			if(hit==12)
+			{
+			    total+=10;
+			    hit=0;
+			}
+			if(hit==13)
+			{   
+			    total+=10;
+			    hit=0;
+			}
+			else
+			{
+			    total+=hit; 
+			}
+			
+	    hit = rand()%13+ 1;//CARD2
+        if(hit==1)
+			{	cout<<"Ace(1/11): ";
+				cin>>ace;
+                total+=ace;
+                ace=0;
+			}
+			if(hit==11)
+			{
+			    total+=10;
+			    hit=0;
+			}
+			if(hit==12)
+			{
+			    total+=10;
+			    hit=0;
+			}
+			if(hit==13)
+			{   
+			    total+=10;
+			    hit=0;
+			}
+			else
+			{
+			    total+=hit; 
+			}
+			
+			cout<<"Total: "<<total<<endl;
+			
+			//----------------------------------------------------------------------------
+		    cin>>response;//Hit or Stand
+			//----------------------------------------------------------------------------
 		
-		if(response=='h')//Hit
+		if(response=='h')//Hit CARD3
 		{
-			understand=true;
-			hit = (rand() %13+ 1);
+			hit = rand()%13+ 1;
 			if(hit==1)
 			{	cout<<"Ace(1/11): ";
 				cin>>ace;
@@ -26,28 +88,123 @@ int main()
 			if(hit==11)
 			{
 			    total+=10;
+			    hit=0;
 			}
 			if(hit==12)
 			{
 			    total+=10;
+			    hit=0;
 			}
 			if(hit==13)
-			{
+			{   
 			    total+=10;
+			    hit=0;
 			}
 			else
 			{
 			    total+=hit; 
 			}
-        cout<<"Total: "<<total;
+        cout<<"Total: "<<total<<endl;
 		}
 		else if(response=='s')//Stand
 		{
-			understand=true;
+		    stand=true;
 		}
-    }
-	
-	
+		
+		
+		
+        if(stand==false)
+	    {
+		cin>>response;//Hit or Stand
+	    }
+		
+		if(response=='h')//Hit CARD4
+		{
+			hit = rand()%13+ 1;
+			if(hit==1)
+			{	cout<<"Ace(1/11): ";
+				cin>>ace;
+                total+=ace;
+                ace=0;
+			}
+			if(hit==11)
+			{
+			    total+=10;
+			    hit=0;
+			}
+			if(hit==12)
+			{
+			    total+=10;
+			    hit=0;
+			}
+			if(hit==13)
+			{   
+			    total+=10;
+			    hit=0;
+			}
+			else
+			{
+			    total+=hit; 
+			}
+        cout<<"Total: "<<total<<endl;
+		}
+		else if(response=='s')//Stand
+		{
+		    stand=true;
+		}
+        
+	    
+        if(stand==false)
+	    {
+		cin>>response;//Hit or Stand
+	    }
+		
+		if(response=='h')//Hit CARD5
+		{
+			hit = rand()%13+ 1;
+			if(hit==1)
+			{	cout<<"Ace(1/11): ";
+				cin>>ace;
+                total+=ace;
+                ace=0;
+			}
+			if(hit==11)
+			{
+			    total+=10;
+			    hit=0;
+			}
+			if(hit==12)
+			{
+			    total+=10;
+			    hit=0;
+			}
+			if(hit==13)
+			{   
+			    total+=10;
+			    hit=0;
+			}
+			else
+			{
+			    total+=hit; 
+			}
+        cout<<"Total: "<<total<<endl;
+        rulecard5=true;
+		}
+		if(rulecard5==true && total<=21)
+		{
+		    cout<<"You win by 5 card rule";
+		}
+		else if(total>dealertotal)
+		{
+		    cout<<"You win";
+		}
+		
+		
+		if(total<dealertotal)
+		{
+		cout<<"You lose";
+		}
+        
 	
 	return 0;
 }
