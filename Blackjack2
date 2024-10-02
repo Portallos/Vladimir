@@ -6,104 +6,48 @@ using namespace std;
 
 int main()
 {
-    char response;
-    int total, dealertotal, wins, losses, money, bid, hit;
-    char card1, card2, card3, card4, card5;
-    char dcard1, dcard2, dcard3, dcard4, dcard5;
-    bool understand=true;
-    while(understand=true)
-    {
-        cin>>response;
-        if(response=='h')
-        {
-        understand=true;
-        hit = (rand() %13+ 1);
-        
-        if(hit=1)//1
-        {
-        cout<<" ____"<<endl;
-        cout<<"|    |"<<endl;
-        cout<<"|  1 |"<<endl;
-        cout<<"|____|"<<endl;
-        }
-        if(hit=2)//2
-        {
-        cout<<" ____"<<endl;
-        cout<<"|    |"<<endl;
-        cout<<"|  2 |"<<endl;
-        cout<<"|____|"<<endl;
-        }
-        if(hit=3)//3
-        {
-        cout<<" ____"<<endl;
-        cout<<"|    |"<<endl;
-        cout<<"|  3 |"<<endl;
-        cout<<"|____|"<<endl;
-        }
-        if(hit=4)//4
-        {
-            
-        }
-        if(hit=5)//5
-        {
-            
-        }
-        if(hit=6)//6
-        {
-            
-        }
-        if(hit=7)//7
-        {
-            
-        }
-        if(hit=1)//8
-        {
-            
-        }
-        if(hit=8)//9
-        {
-            
-        }
-        if(hit=9)//10
-        {
-            
-        }
-        if(hit=10)//K
-        {
-            
-        }
-        if(hit=11)//Q
-        {
-            
-        }
-        if(hit=12)//J
-        {
-            
-        }
-        if(hit=13)//A
-        {
-            
-        }
-        
-        
-
-        
-        
-        
-        }
-        else if(response=='s')
-            {
-            understand=true;
-            
-            }
-            else
-            {
-            understand=false;
-            
-            
-            
-            }
+	char response;
+	int total, dealertotal, hit, ace, dealerhit;
+	bool understand=true;
+	while((true))
+	{
+		cin>>response;//Hit or Stand
+		
+		if(response=='h')//Hit
+		{
+			understand=true;
+			hit = (rand() %13+ 1);
+			if(hit==1)
+			{	cout<<"Ace(1/11): ";
+				cin>>ace;
+                total+=ace;
+                ace=0;
+			}
+			if(hit==11)
+			{
+			    total+=10;
+			}
+			if(hit==12)
+			{
+			    total+=10;
+			}
+			if(hit==13)
+			{
+			    total+=10;
+			}
+			else
+			{
+			    total+=hit; 
+			}
+        cout<<"Total: "<<total;
+		}
+		else if(response=='s')//Stand
+		{
+			understand=true;
+		}
     }
-    
-    return 0;
+	
+	
+	
+	return 0;
 }
