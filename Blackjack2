@@ -8,6 +8,8 @@ int main()
 {
 	char response;
 	int total, dealertotal, hit, ace, dealerhit;
+	char card1, card2, card3, card4, card5;
+	char dcard1, dcard2, dcard3, dcard4, dcard5;
 	bool rulecard5, stand;
 	srand (time (0));
 
@@ -22,6 +24,7 @@ int main()
 				cin>>ace;
                 total+=ace;
                 ace=0;
+                card1=
 			}
 			if(hit==11)
 			{
@@ -40,8 +43,19 @@ int main()
 			}
 			else
 			{
-			    total+=hit; 
+			    total+=hit;
+			    card1=hit;
 			}
+			
+			
+		cout<<" _____";
+        cout<<"|     |";
+        cout<<"|     |";
+        cout<<"|  A  |";
+		cout<<"|     |";	
+		cout<<"|_____|";	
+			
+			
 			
 	    hit = rand()%13+ 1;//CARD2
         if(hit==1)
