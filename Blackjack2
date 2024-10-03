@@ -24,36 +24,38 @@ int main()
 				cin>>ace;
                 total+=ace;
                 ace=0;
-                card1=
+                card1='A';
 			}
 			if(hit==11)
 			{
 			    total+=10;
 			    hit=0;
+			    card1='K';
 			}
 			if(hit==12)
 			{
 			    total+=10;
 			    hit=0;
+			    card1='Q';
 			}
 			if(hit==13)
 			{   
 			    total+=10;
 			    hit=0;
+			    card1='J';
 			}
 			else
 			{
 			    total+=hit;
-			    card1=hit;
+			    
 			}
 			
-			
-		cout<<" _____";
-        cout<<"|     |";
-        cout<<"|     |";
-        cout<<"|  A  |";
-		cout<<"|     |";	
-		cout<<"|_____|";	
+		cout<<" _____"<<endl;
+        cout<<"|     |"<<endl;
+        cout<<"|     |"<<endl;
+        cout<<"|  "<<card1<<" |"<<endl;
+	    cout<<"|     |"<<endl;	
+		cout<<"|_____|"<<endl;	
 			
 			
 			
