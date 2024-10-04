@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+#include <string>
 
 using namespace std;
 
@@ -8,8 +9,8 @@ int main()
 {
 	char response;
 	int total, dealertotal, hit, ace, dealerhit;
-	char card1, card2, card3, card4, card5;
-	char dcard1, dcard2, dcard3, dcard4, dcard5;
+	string card1, card2, card3, card4, card5;
+	string dcard1, dcard2, dcard3, dcard4, dcard5;
 	bool rulecard5, stand;
 
 	srand (time (0));
@@ -25,203 +26,184 @@ int main()
 		cin>>ace;
 		total+=ace;
 		ace=0;
-		card1='A';
+		card1="A ";
 	}
 	if(hit==2)
 	{
 		total+=2;
 		hit=0;
-		card1='2';
+		card1="2 ";
 	}
 	if(hit==3)
 	{
 		total+=3;
 		hit=0;
-		card1='3';
+		card1="3 ";
 	}
 	if(hit==4)
 	{
 		total+=4;
 		hit=0;
-		card1='4';
+		card1="4 ";
 	}
 	if(hit==5)
 	{
 		total+=5;
 		hit=0;
-		card1='5';
+		card1="5 ";
 	}
 	if(hit==6)
 	{
 		total+=6;
 		hit=0;
-		card1='6';
+		card1="6 ";
 	}
 	if(hit==7)
 	{
 		total+=7;
 		hit=0;
-		card1='7';
+		card1="7 ";
 	}
 	if(hit==8)
 	{
 		total+=8;
 		hit=0;
-		card1='8';
+		card1="8 ";
 	}
 	if(hit==9)
 	{
 		total+=9;
 		hit=0;
-		card1='9';
+		card1="9 ";
 	}
 	if(hit==10)
 	{
 		total+=10;
 		hit=0;
-		card1='0';
+		card1="10";
 	}
 
 	if(hit==11)
 	{
 		total+=10;
 		hit=0;
-		card1='K';
+		card1="K ";
 	}
 	if(hit==12)
 	{
 		total+=10;
 		hit=0;
-		card1='Q';
+		card1="Q ";
 	}
 	if(hit==13)
 	{
 		total+=10;
 		hit=0;
-		card1='J';
+		card1="J ";
 	}
 
-	if(card1=='0')
-	{
+	
 		cout<<" _____"<<endl;
 		cout<<"|     |"<<endl;
 		cout<<"|     |"<<endl;
-		cout<<"|  10 |"<<endl;
+		cout<<"|  "<<card1<<" |"<<endl;
 		cout<<"|     |"<<endl;
 		cout<<"|_____|"<<endl;
-	}
-	else
-	{
-		cout<<" _____"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|  "<<card1<<"  |"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|_____|"<<endl;
-	}
 
 
 
 	hit = rand()%13+ 1;//CARD2
-	if(hit==1)
+		if(hit==1)
 	{	cout<<"Ace(1/11): ";
 		cin>>ace;
 		total+=ace;
 		ace=0;
-		card2='A';
+		card2="A ";
 	}
 	if(hit==2)
 	{
 		total+=2;
 		hit=0;
-		card2='2';
+		card2="2 ";
 	}
 	if(hit==3)
 	{
 		total+=3;
 		hit=0;
-		card2='3';
+		card2="3 ";
 	}
 	if(hit==4)
 	{
 		total+=4;
 		hit=0;
-		card2='4';
+		card2="4 ";
 	}
 	if(hit==5)
 	{
 		total+=5;
 		hit=0;
-		card2='5';
+		card2="5 ";
 	}
 	if(hit==6)
 	{
 		total+=6;
 		hit=0;
-		card2='6';
+		card2="6 ";
 	}
 	if(hit==7)
 	{
 		total+=7;
 		hit=0;
-		card2='7';
+		card2="7 ";
 	}
 	if(hit==8)
 	{
 		total+=8;
 		hit=0;
-		card2='8';
+		card2="8 ";
 	}
 	if(hit==9)
 	{
 		total+=9;
 		hit=0;
-		card2='9';
+		card2="9 ";
 	}
 	if(hit==10)
 	{
 		total+=10;
 		hit=0;
-		card2='0';
+		card2="10";
 	}
 
 	if(hit==11)
 	{
 		total+=10;
 		hit=0;
-		card2='K';
+		card2="K ";
 	}
 	if(hit==12)
 	{
 		total+=10;
 		hit=0;
-		card2='Q';
+		card2="Q ";
 	}
 	if(hit==13)
 	{
 		total+=10;
 		hit=0;
-		card2='J';
+		card2="J ";
 	}
 
-	if(card2=='0')
-	{
-		cout<<" _____"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|  10 |"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|_____|"<<endl;
-	}
-	else
-	{
-		cout<<" _____"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|  "<<card2<<"  |"<<endl;
-		cout<<"|     |"<<endl;
-		cout<<"|_____|"<<endl;
-	}
+	
+		cout<<" _____"<<" _____" ;
+		cout<<"|     |" ;
+		cout<<"|     |" ;
+		cout<<"|  "<<card1<<" |" ;
+		cout<<"|     |" ;
+		cout<<"|_____|" ;
+
+
+
 
 	cout<<"Total: "<<total<<endl;
 
@@ -577,10 +559,10 @@ int main()
 	{
 		cout<<"Bust";
 	}
-	else
-	{
-		cout<<"You lose";
-	}
+// 	else if()
+// 	{
+// 		cout<<"You lose";
+// 	}
 
 	return 0;
 }
