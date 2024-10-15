@@ -517,12 +517,6 @@ int main()
 			cout<<"|     | " <<"|     | "<<"|     | "<<"|     | "<<"|     | "<<endl;
 			cout<<"|_____| " <<"|_____| "<<"|_____| "<<"|_____| "<<"|_____| "<<endl<<endl;
             
-			rulecard5=true;
-		}
-		if(rulecard5==true && total<=21)
-		{
-			cout<<endl<<"You win by 5 card rule"<<endl;
-			this_thread::sleep_for(std::chrono::milliseconds(2500));
 		}
 		else if(total>dealertotal && total<=21)
 		{
@@ -547,3 +541,106 @@ int main()
 	}
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <iostream>
+// #include <iomanip>
+
+// using namespace std;
+
+// int main()
+// {
+    
+    
+//     string card1[7] = {
+//     " _____ ",
+// 	"|     | ",
+// 	"|     | ",
+// 	"|  ",
+// 	" | ",
+// 	"|     | ",
+// 	"|_____| "
+//     };
+    
+//     string card2[7] = {
+//     " _____ ",
+// 	"|     | ",
+// 	"|     | ",
+// 	"|  ",
+// 	"| ",
+// 	"|     | ",
+// 	"|_____| "
+//     };
+    
+//     string card3[7] = {
+//     " _____ ",
+// 	"|     | ",
+// 	"|     | ",
+// 	"|  ",
+// 	"| ",
+// 	"|     | ",
+// 	"|_____| "
+//     };
+    
+//     for(int i=0; i<7; i++)
+//     {   
+//         if(i==3)
+//         {
+//         cout<<card1[i]<<"K ";
+//         i++;
+//         cout<<card1[i]<<endl;
+//         }
+//         else
+//         {
+//             cout<<card1[i]<<endl;
+//         }
+        /// cout<<setw(8)<<card2[i];
+        /// cout<<setw(8)<<card3[i]<<endl;
+//     }
+    
+    
+    
+    
+    
+    
+
+//     return 0;
+// }
